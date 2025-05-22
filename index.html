@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HomeRevive360 - Tienda de Hogar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 1 1 200px;
+            max-width: 250px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .item h3 {
+            margin: 10px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #eee;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        @media(max-width: 768px){
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HomeRevive360</h1>
+    <p>Tu tienda de artículos de segunda mano y nuevos para el hogar</p>
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="gallery">
+        <!-- Muebles -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0f?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Sofá vintage"/>
+            <h3>Sofá Vintage</h3>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1572182266800-9820a55f1760?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Mesa de comedor"/>
+            <h3>Mesa de Comedor</h3>
+        </div>
+        <!-- Utensilios de cocina -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1589923188900-056d03eabb86?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Set de utensilios"/>
+            <h3>Utensilios de Cocina</h3>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1603572232095-49554521477b?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Vajilla Completa"/>
+            <h3>Vajilla Completa</h3>
+        </div>
+        <!-- Todo para el hogar -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1607324638520-4f33834f590b?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Lámpara de pie"/>
+            <h3>Lámpara de Pie</h3>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1599687360268-56dc11ef0dcb?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Alfombra decorativa"/>
+            <h3>Alfombra Decorativa</h3>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" style="text-align:center; padding-top:20px;">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna consulta? Escríbenos a <a href="mailto:info@homerevive360.com">info@homerevive360.com</a></p>
+    <p>Síguenos en redes sociales:</p>
+    <p>
+        <a href="#" target="_blank">Instagram</a> | 
+        <a href="#" target="_blank">Facebook</a>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2025 HomeRevive360. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
